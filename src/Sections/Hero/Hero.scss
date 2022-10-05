@@ -1,0 +1,144 @@
+.hero--wrapper {
+  width: 100%;
+  padding: 120px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 900px) {
+    flex-direction: column-reverse;
+  }
+}
+.hero--image {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .profileImg {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid #33332d;
+    background-color: #efefef;
+    position: relative;
+    @media screen and (max-width: 600px) {
+      width: 80%;
+      aspect-ratio: 1/1;
+      height: auto;
+    }
+  }
+  .profileImg::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #33332d;
+    border-radius: 50%;
+    left: 0;
+  }
+}
+.hero--infos {
+  flex-basis: 50%;
+  h1 {
+    font-size: 54px;
+    color: #33332d;
+    margin: 20px auto;
+    font-weight: 600;
+    @media screen and (max-width: 600px) {
+      font-size: 36px;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    color: #33332d;
+    margin: 50px auto;
+    font-weight: 500;
+    span {
+      position: relative;
+      color: rgba(0, 0, 0, 0.15);
+      &::before {
+        content: attr(data-text);
+        position: absolute;
+        max-width: 195px;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 4px solid #33332d;
+        color: #33332d;
+        animation: animateSpan 6s linear infinite;
+        filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 50px #fff);
+      }
+    }
+    @media screen and (max-width: 600px) {
+      font-size: 24px;
+    }
+  }
+}
+.boxInfos {
+  margin-top: 100px;
+  padding: 30px;
+  border: 2px solid #33332d;
+  border-radius: 8px;
+  position: relative;
+  p {
+    font-family: "IBM Plex Sans", monospace;
+    font-size: 18px;
+    color: #33332d;
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+  .jsAbsBox {
+    position: absolute;
+    top: -50px;
+    background-image: url("../../assets/javascript2.png");
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    animation: animateJs 1s;
+    .eyes {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      .oneEye {
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #33332d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: #33332d;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+@keyframes animateSpan {
+  0%,
+  10%,
+  100% {
+    width: 10px;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes animateJs {
+  0% {
+    top: -0%;
+  }
+  75% {
+    top: -75px;
+  }
+  100% {
+    top: -50px;
+  }
+}

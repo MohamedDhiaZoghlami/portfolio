@@ -1,0 +1,130 @@
+.about--wrapper {
+  width: 100%;
+  padding: 120px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
+  @media screen and (max-width: 900px) {
+    padding: 90px 5%;
+  }
+}
+.about--content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+}
+.about--image {
+  padding: 30px;
+  position: relative;
+  flex-basis: 35%;
+  border: 2px solid #33332d;
+  border-radius: 8px;
+  background-image: url("../../assets/math.jpg");
+  background-position: center;
+  background-size: cover;
+  align-self: stretch;
+  z-index: 0;
+  h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    @media screen and (max-width: 600px) {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 20px;
+  }
+}
+.about--infos {
+  background-color: #fff;
+  padding: 30px;
+  border: 2px solid #33332d;
+  border-radius: 8px;
+  position: relative;
+  flex-basis: 60%;
+  z-index: 11;
+  p {
+    font-family: "IBM Plex Sans", monospace;
+    font-size: 18px;
+    color: #33332d;
+    @media screen and (max-width: 600px) {
+      font-size: 16px;
+    }
+  }
+  h2 {
+    font-size: 30px;
+    color: #33332d;
+    margin-bottom: 30px;
+    font-weight: 500;
+  }
+  .reactAbsBox {
+    position: absolute;
+    bottom: -110px;
+    right: 0;
+    background-image: url("../../assets/react.png");
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 10px;
+    animation: animateReact 1s;
+    .eyess {
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      .oneEyes {
+        background-color: #fff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 2px solid #33332d;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        color: #33332d;
+        font-weight: 700;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 20px;
+  }
+}
+.about--infos::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  border: 2px solid #33332d;
+  border-radius: 8px;
+  z-index: 10;
+  @media screen and (max-width: 600px) {
+    top: -10px;
+    left: -10px;
+  }
+}
+
+@keyframes animateReact {
+  0% {
+    right: -0%;
+  }
+  75% {
+    right: 50px;
+  }
+  100% {
+    right: 0%;
+  }
+}
