@@ -1,0 +1,20 @@
+.rq_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: green;
+  position: absolute;
+  top: 80px;
+  p {
+    font-size: 16px;
+    color: #fff;
+    font-family: "IBM Plex Mono", monospace;
+    text-align: center;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
