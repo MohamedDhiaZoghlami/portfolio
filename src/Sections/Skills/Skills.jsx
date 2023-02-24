@@ -8,6 +8,11 @@ import SASS from "../../assets/sass.png";
 import REACT from "../../assets/react.png";
 import REDUX from "../../assets/redux.png";
 import GIT from "../../assets/git.png";
+import NODE from "../../assets/node.png";
+import EXPRESS from "../../assets/express.png";
+import MONGO from "../../assets/mongodb.png";
+import MYSQL from "../../assets/mysql.png";
+import DOCKER from "../../assets/docker.png";
 
 const skills = [
   {
@@ -47,8 +52,33 @@ const skills = [
   },
   {
     id: 8,
+    title: "nodejs",
+    image: NODE,
+  },
+  {
+    id: 9,
+    title: "expressjs",
+    image: EXPRESS,
+  },
+  {
+    id: 10,
+    title: "mongo db",
+    image: MONGO,
+  },
+  {
+    id: 11,
+    title: "MySql",
+    image: MYSQL,
+  },
+  {
+    id: 12,
     title: "git",
     image: GIT,
+  },
+  {
+    id: 13,
+    title: "docker",
+    image: DOCKER,
   },
 ];
 
@@ -93,17 +123,46 @@ const Skills = () => {
         </div>
         <div className="experience--boxes">
           <div className="experience--box">
-            <h2>June-August 2021 : Summer internship at SOrecom</h2>
-            <p>
-              lorem ipsum hala hala rabou7i lorem ipsum hala hala rabou7i lorem
-              ipsum hala hala rabou7i lorem ipsum hala hala rabou7i lorem ipsum
-              hala hala rabou7i lorem ipsum hala hala rabou7i lorem ipsum hala
-              hala rabou7i lorem ipsum hala hala rabou7i{" "}
-            </p>
+            <h2>June-September 2022 : Summer internship at Numerys</h2>
+            <ul>
+              <li>
+                Collaborated with a four‑person team to develop a web
+                application that let users post motors to sell, contact an owner
+                to buy a motor, get reservation to repair a motor for a french
+                company
+              </li>
+              <li>
+                Developed authentication and authorization of the web
+                application
+              </li>
+              <li>
+                Built the logic for managing products(motors) of the application
+                and the reservation system.
+              </li>
+              <li>Added payment methods such as Stripe and ScalaPay</li>
+              <li>
+                Added some crud operation and filtering to the admin dashboard.
+              </li>
+            </ul>
           </div>
           <div className="experience--box">
-            <h2>June-September 2022 : Summer internship at Numerys</h2>
-            <p>lorem ipsum hala hala rabou7i</p>
+            <h2>June-August 2021 : Summer internship at SMEG</h2>
+            <ul>
+              <li>
+                Collaborated with a person to build an e‑commerce web
+                application of electronic products.
+              </li>
+              <li>
+                Designed the database models and collections, and designed the
+                user interface of the web app.
+              </li>
+              <li>Helped to create an Admin dashboard.</li>
+              <li>
+                Added create, read, update, delete functionalities to the
+                products with filtering and sorting.
+              </li>
+              <li>Added statistics to the admin dashboard</li>
+            </ul>
           </div>
         </div>
       </div>
