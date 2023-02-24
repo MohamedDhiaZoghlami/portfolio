@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.scss";
-import Profile from "../../assets/profile.png";
+import Profile from "../../assets/dzovi.jpg";
 
 const Hero = () => {
   const movingMouse = (e) => {
