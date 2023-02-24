@@ -37,12 +37,17 @@ const Hero = () => {
           <span data-text="&nbsp;Developer.&nbsp;">&nbsp;Developer.&nbsp;</span>
         </h2>
         <div className="boxInfos">
-          <div className="jsAbsBox" id="anchor">
+          <motion.div
+            className="jsAbsBox"
+            id="anchor"
+            animate={{ x: [-1500, 0] }}
+            transition={{ ease: "easeOut", duration: 0.5, delay: 1 }}
+          >
             <div className="eyes">
               <div className="oneEye">.</div>
               <div className="oneEye">.</div>
             </div>
-          </div>
+          </motion.div>
           <p>
             From coding APIs to creating beautifull user interfaces , using
             Javascript to create full stack web applications using React for the
