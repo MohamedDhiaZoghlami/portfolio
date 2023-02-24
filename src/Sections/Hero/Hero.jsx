@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.scss";
 import Profile from "../../assets/dzovi.jpg";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const movingMouse = (e) => {
@@ -25,7 +26,11 @@ const Hero = () => {
   };
   return (
     <section className="hero--wrapper" onMouseMove={movingMouse}>
-      <div className="hero--infos">
+      <motion.div
+        className="hero--infos"
+        animate={{ y: [-1500, 0] }}
+        transition={{ ease: "easeOut", duration: 1 }}
+      >
         <h1>👋 Hi I'm Mohamed Dhia Zoghlami,</h1>
         <h2>
           Full Stack JavaScript
@@ -45,10 +50,14 @@ const Hero = () => {
             apps.
           </p>
         </div>
-      </div>
-      <div className="hero--image">
+      </motion.div>
+      <motion.div
+        className="hero--image"
+        animate={{ x: [1500, 0] }}
+        transition={{ ease: "easeOut", duration: 1, delay: 0.5 }}
+      >
         <img src={Profile} alt="profile" className="profileImg" />
-      </div>
+      </motion.div>
     </section>
   );
 };
