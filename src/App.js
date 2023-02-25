@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
 import Remarque from "./components/Remarque/Remarque";
 import About from "./Sections/About/About";
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Education />
       <Skills />
+      <Footer />
     </div>
   );
 }
