@@ -50,9 +50,9 @@ const Hero = () => {
           </motion.div>
           <p>
             From coding APIs to creating beautifull user interfaces , using
-            Javascript to create full stack web applications using React for the
-            front-end and Node.js and express to handle the server side of the
-            apps.
+            Javascript to create full stack web applications with React for the
+            front-end and NodeJs, ExpressJs to handle the server side of the
+            applications.
           </p>
         </div>
       </motion.div>

@@ -19,12 +19,14 @@
     height: 450px;
     width: 450px;
     align-self: stretch;
-    border-radius: 50%;
+    border-radius: 20%;
     border: 2px dashed #33332d;
     padding: 10px;
     background-color: #efefef;
     position: relative;
+    margin-top: 50px;
     @media screen and (max-width: 600px) {
+      margin-top: 10px;
       width: 80%;
       aspect-ratio: 1/1;
       height: auto;
@@ -47,6 +49,7 @@
 }
 .hero--infos {
   flex-basis: 50%;
+  background-color: #fff;
   h1 {
     font-size: 54px;
     color: #33332d;
