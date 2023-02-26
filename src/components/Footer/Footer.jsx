@@ -1,14 +1,13 @@
 import React from "react";
 import "./Footer.scss";
-// import { Link } from "react-router-dom";
 import Logo from "../../assets/logoF.png";
 import { AiOutlineMail } from "react-icons/ai";
-import { FiMapPin } from "react-icons/fi";
 import {
   BsTelephone,
-  BsYoutube,
   BsFacebook,
   BsInstagram,
+  BsGithub,
+  BsLinkedin,
 } from "react-icons/bs";
 
 const Footer = () => {
@@ -24,32 +23,6 @@ const Footer = () => {
               This Site is made and designed by me, hope you like it and if you
               have any questions just contact me anytime.
             </p>
-          </div>
-          <div className="socialLinks">
-            <a
-              href="https://www.facebook.com/MHM-Motors-103060721805298"
-              target="_blank"
-              rel="noreferrer"
-              className="socialLink"
-            >
-              <BsFacebook className="socialIcons" />
-            </a>
-            <a
-              href="https://www.instagram.com/mhm.motors/"
-              target="_blank"
-              rel="noreferrer"
-              className="socialLink"
-            >
-              <BsInstagram className="socialIcons" />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCNA7S_TBfd_sv76PMIb16LA"
-              target="_blank"
-              rel="noreferrer"
-              className="socialLink"
-            >
-              <BsYoutube className="socialIcons" />
-            </a>
           </div>
         </div>
         <div className="navs">
@@ -74,9 +47,60 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        <div className="navs">
+          <div className="contact">
+            <p>SOCIALS</p>
+            <ul>
+              <li className="contact-item">
+                <BsLinkedin className="footer-icons" />
+                <a
+                  className="paraFoot"
+                  href="https://www.linkedin.com/in/med-dhia-zoghlami/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  LinkedIn
+                </a>
+              </li>
+              <li className="contact-item">
+                <BsGithub className="footer-icons" />
+                <a
+                  className="paraFoot"
+                  href="https://github.com/MohamedDhiaZoghlami"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github
+                </a>
+              </li>
+              <li className="contact-item">
+                <BsFacebook className="footer-icons" />
+                <a
+                  href="https://www.facebook.com/dzoghlami23"
+                  className="paraFoot"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Facebook
+                </a>
+              </li>
+              <li className="contact-item">
+                <BsInstagram className="footer-icons" />
+                <a
+                  className="paraFoot"
+                  href="https://www.instagram.com/dzovic10/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div className="footer-bottom" style={{ fontSize: "14px" }}>
-        &copy; 2023 Designed By Med Dhia.
+        &copy; 2023 Designed & Coded By Med Dhia.
       </div>
     </footer>
   );
