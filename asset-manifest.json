@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2f4cc93c.css",
-    "main.js": "/portfolio/static/js/main.6835cd16.js",
+    "main.css": "/portfolio/static/css/main.34193254.css",
+    "main.js": "/portfolio/static/js/main.ac829561.js",
     "static/media/math.jpg": "/portfolio/static/media/math.8a63d8a4ad03dba2cdef.jpg",
     "static/media/mongodb.png": "/portfolio/static/media/mongodb.6170bacefd8a1f69ca74.png",
     "static/media/mysql.png": "/portfolio/static/media/mysql.167c88550478e6f0f85c.png",
     "static/media/Logo.png": "/portfolio/static/media/Logo.f7cda1d5861914faf6ad.png",
     "static/media/logoF.png": "/portfolio/static/media/logoF.d57a286543f84a2a35f1.png",
     "static/media/dzovi.jpg": "/portfolio/static/media/dzovi.9da4b0c849e6bf9afdec.jpg",
+    "static/media/jsdsa.PNG": "/portfolio/static/media/jsdsa.f4df8dc77971e09f7a45.PNG",
+    "static/media/web.PNG": "/portfolio/static/media/web.bad075fac384908bd0fc.PNG",
     "static/media/express.png": "/portfolio/static/media/express.04e4743fbd704db71ed7.png",
     "static/media/redux.png": "/portfolio/static/media/redux.c9be37e0fece29c624b0.png",
     "static/media/sass.png": "/portfolio/static/media/sass.36e863bfbcb25c109d00.png",
@@ -16,11 +18,11 @@
     "static/media/css.png": "/portfolio/static/media/css.5721a3928fe43de6baf8.png",
     "static/media/git.png": "/portfolio/static/media/git.a54d3fa44e02f2f61e69.png",
     "index.html": "/portfolio/index.html",
-    "main.2f4cc93c.css.map": "/portfolio/static/css/main.2f4cc93c.css.map",
-    "main.6835cd16.js.map": "/portfolio/static/js/main.6835cd16.js.map"
+    "main.34193254.css.map": "/portfolio/static/css/main.34193254.css.map",
+    "main.ac829561.js.map": "/portfolio/static/js/main.ac829561.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f4cc93c.css",
-    "static/js/main.6835cd16.js"
+    "static/css/main.34193254.css",
+    "static/js/main.ac829561.js"
   ]
 }
