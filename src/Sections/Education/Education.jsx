@@ -7,8 +7,34 @@ import { SiAzuredevops } from "react-icons/si";
 import { FaDatabase } from "react-icons/fa";
 
 const Education = () => {
+  const movingMouse = (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    const anchor = document.getElementById("anchoreff");
+    const rekt = anchor.getBoundingClientRect();
+    const anchorX = rekt.left + rekt.width / 2;
+    const anchorY = rekt.top + rekt.height / 2;
+    const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+    const eyes = document.querySelectorAll(".oneEyeess");
+    eyes.forEach((eye) => {
+      eye.style.transform = `rotate(${90 + angleDeg}deg)`;
+    });
+  };
+  const angle = (cx, cy, ex, ey) => {
+    const dy = ey - cy;
+    const dx = ex - cx;
+    const rad = Math.atan2(dy, dx);
+    const deg = (rad * 180) / Math.PI;
+    return deg;
+  };
   return (
-    <section className="abouts" id="services">
+    <section className="abouts" onMouseMove={movingMouse} id="services">
+      <div className="redAbsBox" id="anchoreff">
+        <div className="eyese">
+          <div className="oneEyeess">.</div>
+          <div className="oneEyeess">.</div>
+        </div>
+      </div>
       <div className="about-left">
         <BsFillQuestionSquareFill className="about-icon" />
         <h1>What Do I Provide??</h1>
