@@ -25,7 +25,7 @@ const projectss = [
 
 const Projects = () => {
   return (
-    <div className="projects-wrapper">
+    <div className="projects-wrapper" id="projects">
       <h1>#Projects</h1>
       <div className="projects-container">
         {projectss.map((e) => (

@@ -37,17 +37,18 @@ const About = () => {
           </div>
           <h2>Who am i ?</h2>
           <p>
-            I'm Dhia, a web developer with a unique background in mathematics.
-            After earning my bachelor's degree in mathematics, I've felt in love
-            with programming so instead of looking for jobs i have decided to
-            engage in another college degree and pursue a career in software
-            engineering. I discovered that the logical thinking and
-            problem-solving skills I developed during my studies in mathematics
-            have been invaluable assets in my work as a developer. Since making
-            the switch, I have been passionate about creating engaging and
-            dynamic websites that not only look great but also provide seamless
-            user experiences. When I'm not coding, I enjoy watching football,
-            reading, and taking long walks.
+            Hello, I'm Dhia, a web developer with a unique background in
+            mathematics. After earning my bachelor's degree in mathematics, I
+            fell in love with programming. Rather than seeking immediate job
+            opportunities, I made the decision to pursue another college degree
+            in software engineering to further develop my skills in this field.
+            The logical thinking and problem-solving abilities I honed during my
+            mathematics studies have proven to be invaluable assets in my work
+            as a developer. Since transitioning to software engineering, I have
+            been passionate about creating engaging and dynamic websites that
+            not only look visually appealing but also provide seamless user
+            experiences. When I'm not immersed in coding, I find joy in watching
+            football, reading, and taking long walks.
           </p>
         </div>
       </div>

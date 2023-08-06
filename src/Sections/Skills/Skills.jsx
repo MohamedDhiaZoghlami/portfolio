@@ -12,7 +12,9 @@ import NODE from "../../assets/node.png";
 import EXPRESS from "../../assets/express.png";
 import MONGO from "../../assets/mongodb.png";
 import MYSQL from "../../assets/mysql.png";
+import Spring from "../../assets/spring.png";
 import DOCKER from "../../assets/docker.png";
+import AWS from "../../assets/aws.png";
 
 const skills = [
   {
@@ -71,6 +73,11 @@ const skills = [
     image: MYSQL,
   },
   {
+    id: 14,
+    title: "spring boot",
+    image: Spring,
+  },
+  {
     id: 12,
     title: "git",
     image: GIT,
@@ -79,6 +86,11 @@ const skills = [
     id: 13,
     title: "docker",
     image: DOCKER,
+  },
+  {
+    id: 15,
+    title: "aws",
+    image: AWS,
   },
 ];
 

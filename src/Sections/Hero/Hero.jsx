@@ -4,6 +4,14 @@ import Profile from "../../assets/dzovi.jpg";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const handleDownload = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/mdz-cv-en.pdf";
+    downloadLink.download = "mdz-cv-en.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
   const movingMouse = (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
@@ -33,7 +41,7 @@ const Hero = () => {
       >
         <h1>👋 Hi I'm Mohamed Dhia Zoghlami,</h1>
         <h2>
-          Full Stack JavaScript
+          Full Stack Web
           <span data-text="&nbsp;Developer.&nbsp;">&nbsp;Developer.&nbsp;</span>
         </h2>
         <div className="boxInfos">
@@ -49,11 +57,18 @@ const Hero = () => {
             </div>
           </motion.div>
           <p>
-            From coding APIs to creating beautifull user interfaces , using
-            Javascript to create full stack web applications with React for the
-            front-end and NodeJs, ExpressJs to handle the server side of the
-            applications.
+            I am a passionate and versatile Full Stack Web Developer with a
+            flair for crafting captivating digital experiences. From front-end
+            wizardry with React to building robust backends, I thrive on
+            creating dynamic, user-friendly web applications. With a dedication
+            to clean code, I aim to deliver seamless and impactful solutions. My
+            journey as a developer is fueled by curiosity and a constant drive
+            to learn and grow. Let's collaborate and bring your next project to
+            life with innovation and expertise!
           </p>
+        </div>
+        <div onClick={handleDownload} className="btnCv">
+          Download My CV 📁
         </div>
       </motion.div>
       <motion.div

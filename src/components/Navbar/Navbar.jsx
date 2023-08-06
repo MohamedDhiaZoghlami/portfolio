@@ -22,7 +22,9 @@ const Navbar = () => {
             <li className="navbar--item">
               <a href="#skills">Skills</a>
             </li>
-            <li className="navbar--item">Projects</li>
+            <li className="navbar--item">
+              <a href="#projects">Projects</a>
+            </li>
             <li className="navbar--item">Contact me</li>
           </ul>
         </div>
@@ -40,7 +42,7 @@ const Navbar = () => {
                 <a href="#skills">Skills</a>
               </li>
               <li className="navbar--item" onClick={() => setShow(false)}>
-                Projects
+                <a href="#projects">Projects</a>
               </li>
               <li className="navbar--item" onClick={() => setShow(false)}>
                 Contact me
