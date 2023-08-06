@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const handleDownload = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "/mdz-cv-en.pdf";
-    downloadLink.download = "mdz-cv-en.pdf";
+    downloadLink.href = "/mdz_cv_en.pdf";
+    downloadLink.download = "mdz_cv_en.pdf";
     document.body.appendChild(downloadLink);
     downloadLink.click();
     document.body.removeChild(downloadLink);
