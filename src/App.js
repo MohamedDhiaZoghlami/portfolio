@@ -1,6 +1,5 @@
 import Footer from "./components/Footer/Footer";
 import Navbar from "./components/Navbar/Navbar";
-import Remarque from "./components/Remarque/Remarque";
 import About from "./Sections/About/About";
 import Certifications from "./Sections/Certifications/Certifications";
 import Education from "./Sections/Education/Education";
@@ -12,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Remarque /> */}
       <Hero />
       <About />
       <Education />
